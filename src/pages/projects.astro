@@ -1,29 +1,37 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
 ---
 
-<Layout title="Projects | Harry Keightley">
-    <div class="mt-8">
-        <h1 class="text-3xl font-semibold">Projects</h1>
-        <p class="mt-2 text-gray-800 font-mono">Stuff I've done</p>
-    </div>
+<Layout title="Projects">
+  <h1 class="title">Projects</h1>
+  <p class="mt-2 subtitle">Stuff I've done</p>
 
-    <div class="mt-8 space-y-6">
-        <div>
-            <h2 class="font-semibold text-lg mb-1">wordcrossing.com</h2>
-            <p class="text-sm font-mono">A daily word puzzle in which my girlfriend destroys me.</p>
-        </div>
-        <div>
-            <h2 class="font-semibold text-lg mb-1">piksi</h2>
-            <p class="text-sm font-mono">An app which helps people make decisions.</p>
-        </div>
-        <div>
-            <h2 class="font-semibold text-lg mb-1">elpis.cloud</h2>
-            <p class="text-sm font-mono">Low resource transcription in the cloud.</p>
-        </div>
-        <div>
-            <h2 class="font-semibold text-lg mb-1">helpfulpython.com</h2>
-            <p class="text-sm font-mono">A introductory python course for you.</p>
-        </div>
-    </div>
+  <div class="mt-8 space-y-6">
+    <Project 
+      title="wordcrossing.com" 
+      url="https://www.wordcrossing.com"
+      description="A daily word puzzle in which my girlfriend destroys me."
+    />
+    <Project 
+      title="elpis" 
+      url="https://github.com/CoEDL/elpis_lib"
+      description="Open-source API for 🤗 transformers ASR"
+    />
+    <Project 
+      title="elan-vad" 
+      url="https://github.com/CoEDL/elan-vad"
+      description="Voice-audio-detection library for elan files."
+    />
+    <Project 
+      title="piksi" 
+      description="An app which helps people make decisions."
+      wip
+    />
+    <Project 
+      title="helpfulpython.com" 
+      description="A introductory python course for you."
+      wip
+    />
+  </div>
 </Layout>

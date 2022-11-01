@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-3xl font-semibold;
+  }
+
+  .subtitle {
+    @apply text-gray-800 font-mono;
+  }
+
+  .post pre {
+    @apply text-sm md:text-base p-4 border;
+  }
+}

@@ -1,0 +1,22 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+import Layout from './Layout.astro'
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  subtitle?: string;
+  author?: string;
+  date: string;
+}>
+const DEFAULT_AUTHOR = 'Harry Keightley'
+const { frontmatter, url } = Astro.props;
+---
+<Layout title={frontmatter.title}>
+  <h1 class="title">{frontmatter.title}</h1>
+  <p class="subtitle mt-2">{frontmatter.subtitle}</p>
+  <p class="text-sm mt-3 text-gray-600">{frontmatter.author ?? DEFAULT_AUTHOR} - {frontmatter.date}</p>
+  <hr class="my-4"/>
+  <article class="py-4 post prose prose-slate max-w-none">
+    <slot />
+  </article>
+</Layout>
