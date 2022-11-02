@@ -2,7 +2,7 @@
 import githubImage from '/github.png'
 ---
 <nav class="flex mt-8 space-x-4 justify-between font-semibold items-center" >
-    <a href="/">
+    <a href="/" aria-label="Home link">
         <div class="p-2 transition border hover:border-black cursor-pointer">
             <p  class="font-mono">HK</p>
         </div>
@@ -23,8 +23,8 @@ import githubImage from '/github.png'
           <a href="/resume.pdf">Resume</a>
       </li>
       <li>
-        <a href='https://github.com/harrykeightley'>
-          <img src={githubImage} class="ml-2 h-8 w-8"/>
+        <a href='https://github.com/harrykeightley' aria-label="GitHub link">
+          <img alt='GitHub' src={githubImage} class="ml-2 h-8 w-8"/>
         </a>
       </li>
     </ul>

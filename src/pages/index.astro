@@ -2,9 +2,12 @@
 import Container from '../components/Container.astro';
 import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
+
+const description = `Harry Keightley is a computer scientist, game developer and founder.
+This is where he puts content so that he doesn't forget`
 ---
 
-<Layout>
+<Layout description={description}>
   <h1 class="title">Harry Keightley</h1>
   <p class="subtitle mt-2">Computer Scientist @ <a href='https://www.uq.edu.au/'>UQ</a></p>
 </Layout>
