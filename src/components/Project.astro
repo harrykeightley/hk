@@ -8,12 +8,12 @@ interface Props {
 
 const {title, description, url='#', wip=false} = Astro.props;
 ---
-<div>
+<li>
     <a href={url}>
-      <h2 class={"font-semibold text-lg mb-1 " + (wip && "text-gray-600")}>
+      <h3 class={"font-semibold text-lg mb-1 " + (wip && "text-gray-600")}>
         {title}{wip && "- (wip)"}
-      </h2>
+      </h3>
     </a>
     <p class="text-sm font-mono">{description}</p>
-</div>
+</li>
 

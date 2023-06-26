@@ -1,31 +1,33 @@
 ---
 import githubImage from '/github.png'
 ---
-<nav class="flex mt-8 space-x-4 justify-between font-semibold items-center" >
-    <a href="/" aria-label="Home link">
-        <div class="p-2 transition border hover:border-black cursor-pointer">
-            <p  class="font-mono">HK</p>
-        </div>
-    </a>
+<header>
+  <nav class="flex mt-8 space-x-4 justify-between font-semibold items-center" >
+      <a href="/" aria-label="Home link">
+          <div class="p-2 transition border hover:border-black cursor-pointer">
+              <p  class="font-mono">HK</p>
+          </div>
+      </a>
 
-    <ul class="flex space-x-4 justify items-center">
-      <li class="hover:underline">
-          <a href="/projects">
-              Projects
+      <ul class="flex space-x-4 justify items-center">
+        <li class="hover:underline">
+            <a href="/projects">
+                Projects
+            </a>
+        </li>
+        <li class="hover:underline">
+            <a href="/thoughts">
+                Thoughts
+            </a>
+        </li>
+        <li class="hover:underline">
+            <a href="/resume.pdf">Resume</a>
+        </li>
+        <li>
+          <a href='https://github.com/harrykeightley' aria-label="GitHub link">
+            <img alt='GitHub' src={githubImage} class="ml-2 h-8 w-8"/>
           </a>
-      </li>
-      <li class="hover:underline">
-          <a href="/thoughts">
-              Thoughts
-          </a>
-      </li>
-      <li class="hover:underline">
-          <a href="/resume.pdf">Resume</a>
-      </li>
-      <li>
-        <a href='https://github.com/harrykeightley' aria-label="GitHub link">
-          <img alt='GitHub' src={githubImage} class="ml-2 h-8 w-8"/>
-        </a>
-      </li>
-    </ul>
-</nav>
+        </li>
+      </ul>
+  </nav>
+</header>

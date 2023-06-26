@@ -4,70 +4,76 @@ import Project from '../components/Project.astro';
 ---
 
 <Layout title="Projects">
-  <h1 class="title">Projects</h1>
-  <p class="mt-2 subtitle">Stuff I've made</p>
+  <section>
+    <h1 class="title">Projects</h1>
+    <ul class="mt-8 space-y-6">
+      <Project 
+        title="wordcrossing.com" 
+        url="https://www.wordcrossing.com"
+        description="A daily word puzzle in which my girlfriend destroys me."
+      />
+      <Project 
+        title="elpis" 
+        url="https://github.com/CoEDL/elpis_lib"
+        description="Open-source API for 🤗 transformers ASR"
+      />
+      <Project 
+        title="run-in" 
+        url="https://run-in.app"
+        description="A simple encounter manager for DnD 5e"
+      />
+      <Project 
+        title="elan-vad" 
+        url="https://github.com/CoEDL/elan-vad"
+        description="Voice-audio-detection library for elan files."
+      />
+    </ul>
+  </section>
 
-  <div class="mt-8 space-y-6">
-    <Project 
-      title="wordcrossing.com" 
-      url="https://www.wordcrossing.com"
-      description="A daily word puzzle in which my girlfriend destroys me."
-    />
-    <Project 
-      title="elpis" 
-      url="https://github.com/CoEDL/elpis_lib"
-      description="Open-source API for 🤗 transformers ASR"
-    />
-    <Project 
-      title="run-in" 
-      url="https://run-in.app"
-      description="A simple encounter manager for DnD 5e"
-    />
-    <Project 
-      title="elan-vad" 
-      url="https://github.com/CoEDL/elan-vad"
-      description="Voice-audio-detection library for elan files."
-    />
-  </div>
-  <p class="title mt-16">Other websites</p>
-  <div class="mt-8 space-y-6">
-    <Project 
-      title="gambay" 
-      url="https://gambay.com.au"
-      description="Australian Indigenous Language Map"
-    />
-    <Project 
-      title="beds with benefits" 
-      url="https://bedswithbenefits.com"
-      description="Direct Australian bookings, commission free."
-    />
-    <Project 
-      title="atap.edu.au" 
-      url="https://atap.edu.au"
-      description="The Australian Text Analytics Platform"
-    />
-    <Project 
-      title="ldaca.edu.au" 
-      url="https://atap.edu.au"
-      description="The Language Data Commons of Australia"
-    />
-    <Project 
-      title="kozai timber" 
-      url="https://www.kozaitimber.com"
-      description="Traditional Japanese Timbers"
-    />
-  </div>
-  <p class="title mt-16">Works in Progress</p>
-  <div class="mt-8 space-y-6">
-    <Project 
-      title="immy" 
-      description="An app which helps people make decisions."
-      wip
-    />
-    <Project 
-      title="helpfulpython.com" 
-      description="A introductory python course for you."
-      wip
-    />
-  </div>
+  <section>
+    <h2 class="title mt-16">Other websites</h2>
+    <ul class="mt-8 space-y-6">
+      <Project 
+        title="gambay" 
+        url="https://gambay.com.au"
+        description="Australian Indigenous Language Map"
+      />
+      <Project 
+        title="beds with benefits" 
+        url="https://bedswithbenefits.com"
+        description="Direct Australian bookings, commission free."
+      />
+      <Project 
+        title="atap.edu.au" 
+        url="https://atap.edu.au"
+        description="The Australian Text Analytics Platform"
+      />
+      <Project 
+        title="ldaca.edu.au" 
+        url="https://atap.edu.au"
+        description="The Language Data Commons of Australia"
+      />
+      <Project 
+        title="kozai timber" 
+        url="https://www.kozaitimber.com"
+        description="Traditional Japanese Timbers"
+      />
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="title mt-16">Works in Progress</h2>
+    <ul class="mt-8 space-y-6">
+      <Project 
+        title="immy" 
+        description="An app which helps people make decisions."
+        wip
+      />
+      <Project 
+        title="helpfulpython.com" 
+        description="A introductory python course for you."
+        wip
+      />
+    </ul>
+  </section>
 </Layout>
