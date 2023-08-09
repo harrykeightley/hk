@@ -108,7 +108,8 @@ the _Power Management_ tab in the BIOS settings.
 
 If you've followed these steps so far, you'll likely be seeing this gorgeous
 interface:
-![Wiping the optiplex](/public/homeserver/wiping.png)
+
+![Wiping the optiplex](/homeserver/wiping.png)
 
 Do not, I repeat, **do not** believe the lies of the blue progress bar. I intently watched 
 it fill up, only for it to start over again. If you don't have an NVME drive, like me, 
@@ -228,7 +229,7 @@ try to use it with a different setup and it bites you in the ass.
 
 ### 3.4 My docker compose file.
 To really see what I mean by how easy it was to use all these applications 
-together- take a look at how small [my docker compose](/public/homeserver/docker-compose.yaml) is:
+together- take a look at how small [my docker compose](/homeserver/docker-compose.yaml) is:
 
 
 <details>
@@ -320,7 +321,7 @@ file, and enter:
 
 `docker compose up -d`
 
-![running-docker-services](/public/homeserver/itsalive.png)
+![running-docker-services](/homeserver/itsalive.png)
 It's alive! Also, whenever your computer restarts, these services should as well.
 
 ### 3.6 Configuring the services
