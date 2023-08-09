@@ -67,7 +67,7 @@ _not_ refer to movies, tv series, and the like.
 - The increased cost of electricity.
 
 ### 1.3 Requirements
-For this guide, basic competency with \*nix sytems and the commandline is 
+For this guide, basic competency with \*nix systems and the commandline is 
 assumed. It is likely you will encounter your own unique set of roadblocks 
 during installation, and you must be willing to fix these on your own.
 
