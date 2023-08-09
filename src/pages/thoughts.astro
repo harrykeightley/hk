@@ -6,19 +6,24 @@ const posts = await Astro.glob('../pages/thoughts/*.md');
 
 <Layout title="Thoughts">
   <h1 class="title">Thoughts</h1>
-  <p class="subtitle mt-2">Half formed blog posts</p>
+  <p class="subtitle mt-2">Half-formed blog posts</p>
 
   <ul class="mt-8 space-y-4">
-    {posts.map(post => (
-      <a href={post.url}>
-        <li class="p-4 border hover:border-black transition cursor-pointer">
-          <p class="text-xl font-semibold">{post.frontmatter.title}</p> 
-          <p class="font-mono mt-1">{post.frontmatter.subtitle}</p>
-          <div class="flex text-sm mt-4 space-x-4">
-            <p class="text-gray-600">{post.frontmatter.date}</p>
+    {posts
+        .filter((post) => !post.frontmatter.hidden)
+        .sort((a, b) => b.frontmatter.date.localeCompare(a.frontmatter.date))
+        .map(post => (
+      <li>
+        <a href={post.url} >
+          <div class="p-4 border hover:border-black transition cursor-pointer">
+            <p class="text-xl font-semibold">{post.frontmatter.title}</p> 
+            <p class="font-mono mt-1">{post.frontmatter.subtitle}</p>
+            <div class="flex text-sm mt-4 space-x-4">
+              <p class="text-gray-600">{post.frontmatter.date}</p>
+            </div>
           </div>
-        </li>
-      </a>
+        </a>
+      </li>
     ))}
   </ul>
 </Layout>

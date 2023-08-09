@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .link {
+    @apply underline text-blue-500 decoration-blue-500;
+  }
+
   .title {
     @apply text-3xl font-semibold;
   }

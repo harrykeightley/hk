@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: "Competing with Giants"
 subtitle: "And getting humbled"
-date: "02 Nov 2022"
+date: "2022-11-02"
 ---
 
 Yesterday, I was reading through a [HackerNews post](https://news.ycombinator.com/item?id=33413124),
