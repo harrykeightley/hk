@@ -9,11 +9,11 @@ interface Props {
 const {title, description, url='#', wip=false} = Astro.props;
 ---
 <li>
-    <a href={url}>
-      <h3 class={"font-semibold text-lg mb-1 " + (wip && "text-gray-600")}>
-        {title}{wip && "- (wip)"}
-      </h3>
-    </a>
-    <p class="text-sm font-mono">{description}</p>
+  <a class="hover:underline" href={url}>
+    <h3 class={"font-semibold text-lg mb-1 " + (wip && "text-gray-600")}>
+      {title}{wip && " - (wip)"}
+    </h3>
+  </a>
+  <p class="text-sm font-mono">{description}</p>
 </li>
 
