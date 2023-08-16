@@ -2,13 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .link {
-    @apply underline text-blue-500 decoration-blue-500;
+@layer base {
+  h1 {
+    @apply text-4xl lg:text-5xl scroll-m-20 font-extrabold tracking-tight;
   }
 
-  .title {
-    @apply text-3xl font-semibold;
+  h2 {
+    @apply text-3xl scroll-m-20 font-semibold tracking-tight transition-colors;
+  }
+
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  blockquote {
+    @apply border-l-2 pl-6 italic;
+  }
+}
+
+@layer components {
+  .link {
+    @apply underline text-blue-600 decoration-blue-600;
   }
 
   .subtitle {
